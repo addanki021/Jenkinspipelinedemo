@@ -22,6 +22,10 @@ pipeline {
                 echo 'Releasing'
             }
         }
-        
-    }
+         stage('Monitor') {
+             steps {
+                echo 'Monitoring'
+             }
+       }
+   }
 }
